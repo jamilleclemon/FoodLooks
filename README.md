@@ -1,5 +1,21 @@
 # FoodLooks
 FoodLooks is an recipe app that can search for items to cook and users will get recipes or videos back from search. 
+
+
+## Table of Contents
+1. [Overview](#Overview)
+1. [Product Spec](#Product-Spec)
+1. [Wireframes](#Wireframes)
+1. [Schema](#Schema)
+
+## Overview
+### Description
+
+
+- **Category:** Social Networking / food
+- **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as tinder or other similar apps. Functionality wouldn't be limited to mobile devices, however mobile version could potentially have more features.
+- **Story:** Analyzes users food choices, and connects them to other users with similar choices. The user can search for a partivular item to eat or creat anf the searches becomes avalibale to them. 
+
 ## Schema 
 ### Models
 #### Post
@@ -14,8 +30,14 @@ FoodLooks is an recipe app that can search for items to cook and users will get 
 
 ### Networking
 #### List of network requests by screen
+      <<<<<<< patch-1
+   - Home screen
+      - (Read/GET) Query recipes 
+    
+                =======
    - Home recipe Screen
       - (Read/GET) Query all posts where user is author
+                >>>>>>> main
          ```swift
          let query = PFQuery(className:"Post")
          query.whereKey("author", equalTo: currentUser)
@@ -23,6 +45,19 @@ FoodLooks is an recipe app that can search for items to cook and users will get 
          query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
             if let error = error { 
                print(error.localizedDescription)
+    <<<<<<< patch-1
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+      - (Create/POST) Create a new comment on a post
+      - (Delete) Delete existing comment
+   - Create Post Screen
+      - (Create/POST) Create a new post object
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+=======
             } else if let posts = posts {
                print("Successfully retrieved \(posts.count) posts.")
            
@@ -33,3 +68,4 @@ FoodLooks is an recipe app that can search for items to cook and users will get 
       - (Delete) Delete existing like
       - (Create/POST) Create a new comment on a post
       - (Delete) Delete existing comment
+>>>>>>> main
