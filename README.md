@@ -12,9 +12,43 @@ FoodLooks is an recipe app that can search for items to cook and users will get 
 ### Description
 
 
-- **Category:** Social Networking / food
+- **Category:** Social Networking / Food
 - **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as tinder or other similar apps. Functionality wouldn't be limited to mobile devices, however mobile version could potentially have more features.
 - **Story:** Analyzes users food choices, and connects them to other users with similar choices. The user can search for a particular item to eat or creat anf the searches becomes avalibale to them. 
+
+. User Stories (Required and Optional)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Screen Archetypes
+Login
+Register - User signs up or logs into their account
+
+...
+Feed Screen - Allow users to see diffrent recipies 
+
+Profile Screen
+Allows user to upload recipies , along with pictures.
+
+Save Screen
+Allows User to save and edit recipies 
+
+
+
 
 ## Schema 
 ### Models
