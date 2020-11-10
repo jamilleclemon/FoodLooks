@@ -103,3 +103,4 @@ Allows User to save and edit recipies
       - (Create/POST) Create a new comment on a post
       - (Delete) Delete existing comment
 >>>>>>> main
+<img src="FoodLooksApp.gif" width=250><br>
